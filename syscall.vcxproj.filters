@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source.cpp" />
+    <ClCompile Include="syscall.cpp">
+      <Filter>syscall</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="syscall">
+      <UniqueIdentifier>{4c492147-ca33-4c7c-9e58-e647c09f1b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="winapi">
+      <UniqueIdentifier>{6f3b306c-4fbb-49f1-a477-3117b2b6ba86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="syscall.h">
+      <Filter>syscall</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="native.h">
+      <Filter>winapi</Filter>
+    </ClInclude>
+    <ClInclude Include="winapi.h">
+      <Filter>winapi</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
